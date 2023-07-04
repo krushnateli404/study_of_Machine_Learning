@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linear regression</title>
+</head>
+<style>
+  body{
+    background-color: rgb(59, 168, 205);
+    color: black;
+  }
+  .form_cl{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 50px 10px;
+  }
+  .form_id{
+    padding: 10px 10px;
+    margin: 10px 10px;
+  }
+  .btn{
+    width: 60%;
+    height: 60%;
+    color: black;
+
+    margin: 10px 10px;
+    padding: 10px 10px;
+  }
+  
+  
+</style>
+<body>
+
+    <form  action="/predict" method="post" class="form_cl">
+        <div class="form-group row " >
+            <label >Process temperature [K]</label>
+            <div class="col-sm-10">
+              <input type="text" name="PT" placeholder="Process temperature [K]">
+            </div>
+            <label >Rotational speed [rpm]</label>
+            <div class="col-sm-10">
+              <input type="text" name="rpm" placeholder="Rotational speed [rpm]">
+            </div>
+            <label>Torque [Nm]</label>
+            <div class="col-sm-10">
+              <input type="text" name="Nm" placeholder="Torque [Nm]">
+            </div>
+            <label>Tool wear [min]</label>
+            <div class="col-sm-10">
+              <input type="text" name="min" placeholder="Tool wear [min]">
+            </div>
+            <label>TWF</label>
+            <div class="col-sm-10">
+              <input type="text" name="TWF" placeholder="TWF">
+            </div>
+            <label for="inputPassword" class="col-sm-2 col-form-label">HDF</label>
+            <div class="col-sm-10">
+              <input type="text" name="HDF" placeholder="HDF">
+            </div>
+            <label>PWF</label>
+            <div class="col-sm-10">
+              <input type="text" name="PWF" placeholder="PWF">
+            </div>
+            <label>OSF</label>
+            <div class="col-sm-10">
+              <input type="text" name="OSF" placeholder="OSF">
+            </div>
+            <label>RNF</label>
+            <div class="col-sm-10">
+              <input type="text" name="RNF" placeholder="RNF">
+            </div>
+   
+            <input  class="btn" type="submit" value="submit">
+           
+          </div>
+          
+    </form>
+
+    
+    
+</body>
+</html>
